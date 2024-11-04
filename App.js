@@ -21,7 +21,7 @@ export default function App() {
             },
             headerTintColor: "white",
             contentStyle: {
-              backgroundColor: "#2b0f07",
+              backgroundColor: "#2d2321",
             },
             headerBackTitle: "Back",
           }}
