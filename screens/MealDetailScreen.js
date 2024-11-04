@@ -8,6 +8,7 @@ import {
   Button,
 } from "react-native";
 
+import IconButton from "../components/IconButton";
 import MealDetails from "../components/MealDetails";
 import Subtitle from "../components/MealDetail/Subtitle";
 import List from "../components/MealDetail/List";
@@ -25,7 +26,13 @@ function MealDetailScreen({ route, navigation }) {
   useEffect(() => {
     navigation.setOptions({
       headerRight: () => {
-        return <Button title="Tap me!" onPress={headerButtonPressHandler} />;
+        return (
+          <IconButton
+            icon="star"
+            color="white"
+            onPress={headerButtonPressHandler}
+          />
+        );
       },
     });
   }, [navigation, headerButtonPressHandler]);
