@@ -34,6 +34,7 @@ function MealDetailScreen({ route, navigation }) {
           />
         );
       },
+      title: "Meal Details",
     });
   }, [navigation, headerButtonPressHandler]);
 
